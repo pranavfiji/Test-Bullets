@@ -1,0 +1,9 @@
+function hasCollided(bullet,wall){
+  bullet=bullet.x+bullet.width
+  wall=wall.x+wall.width
+
+  if(bullet.x>=wall.x){
+    return true;
+  }
+  return false;
+}
